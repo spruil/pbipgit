@@ -18,7 +18,7 @@
             "height": 197,
             "width": 262
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -30,7 +30,7 @@
             "height": 118,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 12
         },
         {
           "location": {
@@ -42,7 +42,7 @@
             "height": 118,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
@@ -54,7 +54,7 @@
             "height": 118,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         },
         {
           "location": {
@@ -66,7 +66,7 @@
             "height": 337,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 4
         },
         {
           "location": {
@@ -78,7 +78,7 @@
             "height": 175,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
@@ -90,7 +90,7 @@
             "height": 213,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 6
         },
         {
           "location": {
@@ -102,7 +102,7 @@
             "height": 213,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 7
         },
         {
           "location": {
@@ -114,7 +114,7 @@
             "height": 175,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 8
         },
         {
           "location": {
@@ -126,7 +126,7 @@
             "height": 175,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 9
         },
         {
           "location": {
@@ -138,7 +138,7 @@
             "height": 213,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 10
         },
         {
           "location": {
@@ -150,7 +150,20 @@
             "height": 412,
             "width": 354
           },
-          "zIndex": 0
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 1750.6594202199647,
+            "y": 467
+          },
+          "nodeIndex": "Table",
+          "nodeLineageTag": "782985de-1c05-408d-8f6b-6f667d6e1502",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 11
         }
       ],
       "name": "All tables",
