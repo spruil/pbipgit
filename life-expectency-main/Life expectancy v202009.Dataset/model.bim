@@ -12,7 +12,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Indicators\",\"merge_indicators_world\",\"Year\",\"Alcohol Consumption\",\"Country\",\"Sex\",\"happiness\",\"life expectancy all\",\"life expectancy female\",\"life expectancy male\",\"gdp\",\"Metrics\",\"life_expectancy_years\",\"indicators_gbr\",\"Variance Analysis\",\"Flags\",\"Legend\",\"Population\",\"Buckets\"]"
+        "value": "[\"Indicators\",\"merge_indicators_world\",\"Year\",\"Alcohol Consumption\",\"Country\",\"Sex\",\"happiness\",\"life expectancy all\",\"life expectancy female\",\"life expectancy male\",\"gdp\",\"Metrics\",\"life_expectancy_years\",\"indicators_gbr\",\"Variance Analysis\",\"Flags\",\"Legend\",\"Population\",\"Buckets\",\"Table\"]"
       },
       {
         "name": "PBI_ProTooling",
@@ -17142,6 +17142,47 @@
                 "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type1\",{{\"Gender\", \"Sex\"}})",
                 "in",
                 "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Table",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "eabfd685-e22b-43b3-b6f8-719524cf75c7",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "782985de-1c05-408d-8f6b-6f667d6e1502",
+        "partitions": [
+          {
+            "name": "Table",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WSixWitWJVipOBFMpECoNIgiSiwUA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}})",
+                "in",
+                "    #\"Changed Type\""
               ],
               "type": "m"
             }
